@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html {
+  background-image: url("/hp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

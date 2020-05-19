@@ -1,13 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class CharacterSelector extends Component {
-    render() {
-        return (
-            <div>
-                <h3>selector</h3>
-            </div>
-        );
+const CharacterSelector = (props) => {
+    const options = props.characters.map (character => {
+        return <option value = {character.name} key={character.name}>{character.name}</option>
+    })
+
+    function handleChange(event){
+        props.onCharacterSelected(event.target.value);
     }
+    return(
+        <select id="character-selector" defaultValue="default" onChange={handleChange}>
+            <option disabled value="default" >Choose a character</option>
+            {options}
+        </select>
+    )
 }
 
 export default CharacterSelector;
