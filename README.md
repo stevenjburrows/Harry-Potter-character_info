@@ -1,3 +1,11 @@
+# Harry Potter Character info
+
+This app pulls from an API to display a drop down list of Harry potter characters.  
+When you select one from the list it then takes you to another screen with more information on that character.
+
+## Technology.
+This app was written in React.JS and was part of a nightly homework exersise from CodeClan
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
